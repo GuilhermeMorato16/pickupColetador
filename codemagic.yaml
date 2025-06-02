@@ -1,3 +1,6 @@
+integrations:
+  app_store_connect: pickupcoletador
+
 workflows:
   ios-release:
     name: iOS Release Build
