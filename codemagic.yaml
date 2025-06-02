@@ -1,3 +1,4 @@
+# ✅ ESTA PARTE FICA FORA DO workflows
 integrations:
   app_store_connect: pickupcoletador
 
@@ -10,6 +11,7 @@ workflows:
       ios_signing:
         distribution_type: app_store
         bundle_identifier: com.app.wra6351acda948515228f31e632
+
     scripts:
       - name: Get dependencies
         script: flutter pub get
