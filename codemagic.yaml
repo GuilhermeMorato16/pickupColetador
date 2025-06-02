@@ -1,6 +1,6 @@
 # ✅ ESTA PARTE FICA FORA DO workflows
 integrations:
-  app_store_connect: pickupcoletador
+  app_store_connect: pickupColetador
 
 workflows:
   ios-release:
