@@ -1,6 +1,3 @@
-integrations:
-  app_store_connect: pickupColetador
-
 workflows:
   ios-release:
     name: iOS Release Build
@@ -10,6 +7,10 @@ workflows:
       ios_signing:
         distribution_type: app_store
         bundle_identifier: com.app.wra6351acda948515228f31e632
+
+      # Aqui você adiciona seu variable group
+      groups:
+        - pickupcoletador
 
     scripts:
       - name: Get dependencies
@@ -21,6 +22,9 @@ workflows:
     artifacts:
       - build/ios/ipa/*.ipa
       - build/ios/ipa/*.dSYM.zip
+
+    integrations:
+      app_store_connect: pickupcoletador  # nome da integração (se for o mesmo do variable group, ok)
 
     publishing:
       app_store_connect:
